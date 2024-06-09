@@ -37,13 +37,15 @@
 .pencarian {
     position: relative;
     font-weight: 500;
+	cursor: pointer;
 }
-.icn-search-icn-xs {
+.search-icon {
     width: 16px;
     position: relative;
     height: 16px;
     overflow: hidden;
     flex-shrink: 0;
+	cursor: pointer;
 }
 .search {
     width: 435px;
@@ -56,6 +58,14 @@
     padding: 8px 16px;
     box-sizing: border-box;
 }
+.search-input {
+    border: none;
+    outline:none;
+  	line-height: 20px;
+  	display: inline-block;
+  	width: 100%;
+    background: transparent;
+    }
 .frame-child {
     width: 35px;
     position: absolute;
@@ -106,7 +116,7 @@
     text-align: left;
     color: #737373;
 }
-.button {
+.button-login {
     border-radius: 5px;
     background-color: #4997d0;
     display: flex;
@@ -230,7 +240,7 @@
     font-size: 70px;
     font-family: Inconsolata;
 }
-.fomo-wrapper {
+.popular-box {
     background-color: #1e2952;
     display: flex;
     flex-direction: row;
@@ -238,6 +248,7 @@
     justify-content: center;
     padding: 3px 8px;
     mix-blend-mode: normal;
+	cursor: pointer;
 }
 .populer {
     width: 845px;
@@ -305,7 +316,7 @@
     color: #4997d0;
     font-family: Poppins;
 }
-.like-1-reward-social-up-ratin-icon {
+.like-icon {
     width: 12.9px;
     position: relative;
     height: 11.4px;
@@ -319,7 +330,7 @@
     height: 14px;
     flex-shrink: 0;
 }
-.like-1-reward-social-up-ratin-icon1 {
+.dislike-icon {
     width: 12.9px;
     position: relative;
     height: 11.4px;
@@ -565,8 +576,9 @@
             						</div>
             						<div class="searchadd">
               							<div class="search">
-                								<div class="pencarian">Cari arti kata...</div>
-                								<img class="icn-search-icn-xs" alt="" src="icn search .icn-xs.svg">
+										  <input type="text" class="search-input" name="search" placeholder="Cari arti kata..." required>
+                								
+                								<img class="search-icon" alt="" src="{{ asset('images/search.svg') }}">
                 								
               							</div>
               							<div class="ellipse-parent">
@@ -577,7 +589,7 @@
                 								</div>
               							</div>
             						</div>
-            						<div class="button" id="buttonContainer">
+            						<div class="button-login" id="buttonContainer" onclick="redirectToPageLogin()">
               							<div class="pencarian">Login</div>
             						</div>
           					</div>
@@ -586,7 +598,7 @@
               							<div class="pencarian">Istilah Regional</div>
             						</div>
             						<div class="nav-list-item1">
-              							<div class="pencarian">Budaya Internet</div>
+              							<div class="pencarian" >Budaya Internet</div>
             						</div>
             						<div class="nav-list-item2" id="navListItem2">
               							<div class="pencarian">Teknologi dan Gadget</div>
@@ -602,7 +614,7 @@
       			<div class="frame-parent">
         				<div class="instance-wrapper">
           					<div class="open-book-content-books-book-parent">
-            						<img class="book-logo1" alt="" src="open-book--content-books-book-open.svg">
+            						<img class="book-logo1" alt="" src="{{ asset('images/logo.svg') }}">
             						
             						<div class="logo">
               							<div class="artidari">artidari</div>
@@ -618,94 +630,94 @@
         				</div>
       			</div>
       			<div class="populer">
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">FOMO</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Turu</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Ghosting</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Gamon</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Baper</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Sabeb</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Insecure</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">YTTA</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Kepo</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Japri</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">YNTKTS</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Salting</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Gercep</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Garing</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Kudet</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Pansos</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Kelas abangku</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Kasih paham</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Tipis-tipis</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Gemoy</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Ilmu padi</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Rispek capt</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Kelas</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">OVT</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Sabi</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Rempong</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Nethink</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Bokek</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Caper</div>
         				</div>
-        				<div class="fomo-wrapper">
+        				<div class="popular-box">
           					<div class="pencarian">Mager</div>
         				</div>
       			</div>
@@ -733,10 +745,10 @@
           					<p class="maret-2023">12 MARET 2023</p>
         				</div>
         				<div class="like-1-reward-social-up-ratin-parent">
-          					<img class="like-1-reward-social-up-ratin-icon" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.svg">
+          					<img class="like-icon" alt="" src="{{ asset('images/like.svg') }}">
           					
           					<div class="div1">150</div>
-          					<img class="like-1-reward-social-up-ratin-icon1" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.png">
+          					<img class="dislike-icon" alt="" src="{{ asset('images/dislike.svg') }}">
           					
           					<div class="div2">3</div>
         				</div>
@@ -758,17 +770,12 @@
               							<p class="maret-2023">2 JANUARI 2024</p>
             						</div>
             						<div class="like-1-reward-social-up-ratin-group">
-              							<img class="like-1-reward-social-up-ratin-icon" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.svg">
+              							<img class="like-icon" alt="" src="{{ asset('images/like.svg') }}">
               							
               							<div class="div1">150</div>
-              							<img class="like-1-reward-social-up-ratin-icon1" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.png">
+              							<img class="dislike-icon" alt="" src="{{ asset('images/dislike.svg') }}">
               							
               							<div class="div2">3</div>
-            						</div>
-            						<div class="flag-1-parent">
-              							<img class="flag-1-icon" alt="" src="flag 1.png">
-              							
-              							<div class="pencarian">FLAG</div>
             						</div>
           					</div>
         				</div>
@@ -795,17 +802,12 @@
               							<p class="maret-2023">6 DESEMBER 2023</p>
             						</div>
             						<div class="like-1-reward-social-up-ratin-group">
-              							<img class="like-1-reward-social-up-ratin-icon" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.svg">
+              							<img class="like-icon" alt="" src="{{ asset('images/like.svg') }}">
               							
               							<div class="div1">150</div>
-              							<img class="like-1-reward-social-up-ratin-icon1" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.png">
+              							<img class="dislike-icon" alt="" src="{{ asset('images/dislike.svg') }}">
               							
               							<div class="div2">3</div>
-            						</div>
-            						<div class="flag-1-parent">
-              							<img class="flag-1-icon" alt="" src="flag 1.png">
-              							
-              							<div class="pencarian">FLAG</div>
             						</div>
           					</div>
         				</div>
@@ -836,17 +838,12 @@
               							<p class="maret-2023">13 MARET 2020</p>
             						</div>
             						<div class="like-1-reward-social-up-ratin-group">
-              							<img class="like-1-reward-social-up-ratin-icon" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.svg">
+              							<img class="like-icon" alt="" src="{{ asset('images/like.svg') }}">
               							
               							<div class="div1">150</div>
-              							<img class="like-1-reward-social-up-ratin-icon1" alt="" src="like-1--reward-social-up-rating-media-like-thumb-hand.png">
+              							<img class="dislike-icon" alt="" src="{{ asset('images/dislike.svg') }}">
               							
               							<div class="div2">3</div>
-            						</div>
-            						<div class="flag-1-parent">
-              							<img class="flag-1-icon" alt="" src="flag 1.png">
-              							
-              							<div class="pencarian">FLAG</div>
             						</div>
           					</div>
         				</div>
@@ -858,6 +855,10 @@
   	
   	
   	<script>
+
+			function redirectToPageLogin() {
+            window.location.href = "/login";
+        	}	
     		var buttonContainer = document.getElementById("buttonContainer");
     		if(buttonContainer) {
       			buttonContainer.addEventListener("click", function (e) {

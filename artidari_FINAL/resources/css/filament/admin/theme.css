@@ -1,0 +1,27 @@
+@import '/vendor/filament/filament/resources/css/theme.css';
+
+@config 'tailwind.config.js';
+
+.fi-simple-layout {
+    @apply bg-artidari-alabaster;
+}
+    
+.fi-simple-main {
+    @apply bg-white;
+}
+
+.fi-sidebar-header {
+    @apply !bg-artidari-space-cadet;
+}
+
+.flex.h-16.items-center.gap-x-4.bg-white.px-4.shadow-sm.ring-1{
+    @apply !bg-artidari-space-cadet;
+}
+
+.fi-sidebar {
+    @apply !bg-artidari-alabaster;
+}
+
+.fi-main {
+    @apply !bg-artidari-alabaster;
+}
